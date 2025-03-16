@@ -1,9 +1,7 @@
-# FROM apache/airflow:2.6.3
-# RUN airflow db init
+FROM python:3.12.8-bookworm
 
-# ENV AIRFLOW__CORE__EXECUTOR=LocalExecutor
-# USER airflow
-# FROM python:3.12.8-bookworm
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # WORKDIR /app
 
