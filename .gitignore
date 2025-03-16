@@ -2,3 +2,4 @@ venv
 .venv
 __pycache__
 postgres/database
+airflow/logs
