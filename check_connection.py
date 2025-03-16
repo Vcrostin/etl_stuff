@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-from common import MONGO_URL, DataBases, DATABASE
+from common import MONGO_URL
 
 def check_connection():
     with MongoClient(MONGO_URL) as connection:
