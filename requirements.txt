@@ -1,0 +1,4 @@
+tf-keras
+tensorflow
+transformers
+pymongo
