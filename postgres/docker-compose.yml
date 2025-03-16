@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  pg:
+    image: postgres:13
+    container_name: postgre
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: app_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./database:/var/lib/postgresql/data
+    restart: always
+    networks:
+      - network
+
+volumes:
+  database:
+
+networks:
+  network:
